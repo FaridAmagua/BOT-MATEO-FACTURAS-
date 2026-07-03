@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{document_title}}</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="sheet" aria-label="{{document_title}}">
+      <!-- Watermark image. Replace assets/watermark.png without touching layout. -->
+      <img class="watermark" src="./assets/watermark.png" alt="" aria-hidden="true">
+
+      <header class="receipt-header">
+        <h1>Recibo</h1>
+
+        <div class="receipt-meta" aria-label="Datos del recibo">
+          <p class="receipt-number">Número de Recibo {{receipt_number}}</p>
+          <p class="receipt-reference">Referencia: {{reference}}</p>
+        </div>
+      </header>
+
+      <div class="top-rule" aria-hidden="true"></div>
+
+      <section class="identity-block" aria-label="Empresa y destinatario">
+        <div class="company-block">
+          <img class="company-logo" src="./assets/logo.png" alt="{{company_name}}">
+
+          <address class="company-data">
+            <strong>{{company_name}}</strong>
+            <span>{{company_address}}</span>
+            <span>{{company_city}}</span>
+            <span>NIF: {{company_tax_id}}</span>
+          </address>
+        </div>
+
+        <div class="identity-divider" aria-hidden="true"></div>
+
+        <div class="client-block">
+          <p class="recipient-label">Destinatario:</p>
+          <p class="client-name">{{client_name}}</p>
+
+          <p class="contact-line">
+            <img src="./assets/icons/email.png" alt="" aria-hidden="true">
+            <span>{{client_email}}</span>
+          </p>
+
+          <p class="contact-line">
+            <img src="./assets/icons/phone.png" alt="" aria-hidden="true">
+            <span>{{client_phone}}</span>
+          </p>
+        </div>
+      </section>
+
+      <section class="items-section" aria-label="Detalle del recibo">
+        <table class="items-table">
+          <thead>
+            <tr>
+              <th scope="col" class="col-description">Descripción</th>
+              <th scope="col" class="col-price">Precio U.</th>
+              <th scope="col" class="col-units">Unidades</th>
+              <th scope="col" class="col-discount">Descuento</th>
+              <th scope="col" class="col-partial">Importe parcial</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col-description">{{description}}</td>
+              <td class="col-price">{{price}}</td>
+              <td class="col-units">{{units}}</td>
+              <td class="col-discount">{{discount}}</td>
+              <td class="col-partial">{{partial_amount}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <footer class="receipt-footer" aria-label="Pago y total">
+        <p class="payment-status">
+          <strong>PAGADO:</strong>
+          <span>{{payment_method}} con fecha de {{payment_date}}</span>
+        </p>
+
+        <p class="total-line">
+          <span>TOTAL:</span>
+          <strong>{{total}}</strong>
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>

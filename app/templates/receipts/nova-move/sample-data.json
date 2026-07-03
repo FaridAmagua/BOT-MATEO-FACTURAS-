@@ -1,0 +1,20 @@
+{
+  "document_title": "Recibo",
+  "company_name": "NOVA MOVE",
+  "company_address": "C/Ortega y Gasset 25",
+  "company_city": "(28007) Madrid",
+  "company_tax_id": "B-14464336",
+  "client_name": "GRACIELA BETINA GOMEZ LOPEZ",
+  "client_email": "novamovespain@gmail.com",
+  "client_phone": "+34 658 45 05 78",
+  "receipt_number": "12034",
+  "reference": "SERV-2026-06",
+  "description": "Servicio de relocation en Hermosilla 83",
+  "price": "968 €",
+  "units": "1,00",
+  "discount": "0",
+  "partial_amount": "968 €",
+  "total": "968 €",
+  "payment_method": "Via transferencia",
+  "payment_date": "2026/06/22"
+}

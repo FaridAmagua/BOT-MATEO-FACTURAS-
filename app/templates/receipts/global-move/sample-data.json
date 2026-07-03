@@ -1,0 +1,20 @@
+{
+  "document_title": "Recibo",
+  "company_name": "GLOBAL MOVE",
+  "company_address": "C/Ortega y Gasset 25",
+  "company_city": "(28007) Madrid",
+  "company_tax_id": "B-14464336",
+  "client_name": "{{client_name}}",
+  "client_email": "{{client_email}}",
+  "client_phone": "{{client_phone}}",
+  "receipt_number": "{{receipt_number}}",
+  "reference": "{{reference}}",
+  "description": "{{description}}",
+  "price": "{{price}}",
+  "units": "{{units}}",
+  "discount": "{{discount}}",
+  "partial_amount": "{{partial_amount}}",
+  "total": "{{total}}",
+  "payment_method": "{{payment_method}}",
+  "payment_date": "{{payment_date}}"
+}
