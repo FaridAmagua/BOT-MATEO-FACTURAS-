@@ -9,7 +9,7 @@
   --ink: #111111;
   --rule: #171717;
   --paper: #ffffff;
-  --body-font: "Aptos", "Helvetica Neue", Arial, sans-serif;
+  --body-font: "Segoe UI", "Aptos", "Helvetica Neue", Arial, sans-serif;
   --title-font: "Bodoni 72", "Bodoni MT", "Didot", "Georgia", serif;
 }
 
@@ -26,6 +26,9 @@ body {
   font-family: var(--body-font);
   font-size: 15.6px;
   line-height: 1.35;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
 }
 
 body {
@@ -96,7 +99,7 @@ body {
 
 .receipt-number {
   font-size: 15.9px;
-  font-weight: 700;
+  font-weight: 650;
 }
 
 .receipt-reference {
@@ -152,7 +155,7 @@ body {
   display: block;
   margin-bottom: 4.4mm;
   font-size: 18.7px;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1;
   white-space: nowrap;
 }
@@ -190,7 +193,7 @@ body {
 .client-name {
   margin: 9.1mm 0 6.9mm;
   font-size: 18.1px;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.02;
   white-space: nowrap;
 }
@@ -242,7 +245,7 @@ body {
 }
 
 .items-table th {
-  font-weight: 600;
+  font-weight: 650;
 }
 
 .items-table .col-description {
@@ -287,7 +290,7 @@ body {
 }
 
 .payment-status strong {
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .total-line {
@@ -307,8 +310,8 @@ body {
 }
 
 .total-line strong {
-  font-size: 24.3px;
-  font-weight: 800;
+  font-size: 15.6px;
+  font-weight: 400;
   white-space: nowrap;
 }
 
